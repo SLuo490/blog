@@ -5,10 +5,12 @@ import remarkGfm from 'remark-gfm'
 import remarkSmartypants from 'remark-smartypants'
 import rehypeExternalLinks from 'rehype-external-links'
 
+import icon from 'astro-icon';
+
 // https://astro.build/config
 export default defineConfig({
   site: 'https://astro-blog-template.netlify.app',
-  integrations: [mdx(), svelte()],
+  integrations: [mdx(), svelte(), icon()],
   markdown: {
     shikiConfig: {
       theme: 'nord',
